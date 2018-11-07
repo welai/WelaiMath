@@ -1,14 +1,4 @@
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory();
-	else if(typeof define === 'function' && define.amd)
-		define([], factory);
-	else if(typeof exports === 'object')
-		exports["welai-math"] = factory();
-	else
-		root["welai-math"] = factory();
-})(window, function() {
-return /******/ (function(modules) { // webpackBootstrap
+/******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -104,7 +94,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __extends = (this && this.__extends) || (function () {\n    var extendStatics = function (d, b) {\n        extendStatics = Object.setPrototypeOf ||\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\n        return extendStatics(d, b);\n    }\n    return function (d, b) {\n        extendStatics(d, b);\n        function __() { this.constructor = d; }\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n    };\n})();\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar WelaiMath;\n(function (WelaiMath) {\n    var Point = (function (_super) {\n        __extends(Point, _super);\n        function Point() {\n            return _super !== null && _super.apply(this, arguments) || this;\n        }\n        Point.prototype.verify = function (point) { if (point.length < 2)\n            throw Error(this + \" is not a valid point\"); };\n        Object.defineProperty(Point.prototype, \"x\", {\n            get: function () { this.verify(this); return this[0]; },\n            set: function (newVal) { this[0] = newVal; },\n            enumerable: true,\n            configurable: true\n        });\n        Object.defineProperty(Point.prototype, \"y\", {\n            get: function () { this.verify(this); return this[1]; },\n            set: function (newVal) { this[1] = newVal; },\n            enumerable: true,\n            configurable: true\n        });\n        return Point;\n    }(Array));\n    WelaiMath.Point = Point;\n})(WelaiMath || (WelaiMath = {}));\nvar WelaiPath = (function () {\n    function WelaiPath() {\n    }\n    WelaiPath.prototype.hello = function () {\n        var a = [1, 2];\n        console.log([a, a.x, a.y]);\n        var b = [1];\n        console.log([b, b.x, b.y]);\n    };\n    return WelaiPath;\n}());\nexports.default = WelaiPath;\n\n\n//# sourceURL=webpack://welai-math/./src/WelaiPath.ts?");
+eval("\nvar __extends = (this && this.__extends) || (function () {\n    var extendStatics = function (d, b) {\n        extendStatics = Object.setPrototypeOf ||\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\n        return extendStatics(d, b);\n    }\n    return function (d, b) {\n        extendStatics(d, b);\n        function __() { this.constructor = d; }\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n    };\n})();\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar WelaiMath;\n(function (WelaiMath) {\n    var Point = (function (_super) {\n        __extends(Point, _super);\n        function Point() {\n            return _super !== null && _super.apply(this, arguments) || this;\n        }\n        Point.prototype.verify = function (point) { if (point.length < 2)\n            throw Error(this + \" is not a valid point\"); };\n        Object.defineProperty(Point.prototype, \"x\", {\n            get: function () { this.verify(this); return this[0]; },\n            set: function (newVal) { this[0] = newVal; },\n            enumerable: true,\n            configurable: true\n        });\n        Object.defineProperty(Point.prototype, \"y\", {\n            get: function () { this.verify(this); return this[1]; },\n            set: function (newVal) { this[1] = newVal; },\n            enumerable: true,\n            configurable: true\n        });\n        return Point;\n    }(Array));\n    WelaiMath.Point = Point;\n})(WelaiMath || (WelaiMath = {}));\nvar WelaiPath = (function () {\n    function WelaiPath() {\n    }\n    WelaiPath.prototype.hello = function () {\n        var a = [1, 2];\n        console.log([a, a.x, a.y]);\n        var b = [1];\n        console.log([b, b.x, b.y]);\n    };\n    return WelaiPath;\n}());\nexports.default = WelaiPath;\n\n\n//# sourceURL=webpack:///./src/WelaiPath.ts?");
 
 /***/ }),
 
@@ -116,9 +106,8 @@ eval("\nvar __extends = (this && this.__extends) || (function () {\n    var exte
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar WelaiPath_1 = __importDefault(__webpack_require__(/*! ../src/WelaiPath */ \"./src/WelaiPath.ts\"));\nvar a = new WelaiPath_1.default();\na.hello();\n\n\n//# sourceURL=webpack://welai-math/./test/index.ts?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar WelaiPath_1 = __importDefault(__webpack_require__(/*! ../src/WelaiPath */ \"./src/WelaiPath.ts\"));\nvar a = new WelaiPath_1.default();\na.hello();\n\n\n//# sourceURL=webpack:///./test/index.ts?");
 
 /***/ })
 
 /******/ });
-});
