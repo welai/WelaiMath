@@ -1,4 +1,3 @@
-import WelaiPath from '../src/WelaiPath';
+import WelaiGlyph from '../src/WelaiGlyph';
 
-let a = new WelaiPath();
-a.hello();
+let a = new WelaiGlyph();
