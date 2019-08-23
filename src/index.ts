@@ -1,6 +1,3 @@
-import Glyph from './Glyph';
+export var Wezier = {
 
-export var WelaiGlyph = Glyph;
-export var WelaiMath = {
-  
 };
